@@ -4,7 +4,11 @@ import { faBookBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const SingleUser = (props) => {
     const { title, picture, author, read, name, readDate } = props.user
-    console.log(props.user)
+    // console.log(props.user)
+    const totalRead=props.totalRead
+
+
+   
     return (
         <div>
             <div className="card w-full bg-base-100 shadow-xl mb-4">
@@ -34,8 +38,8 @@ const SingleUser = (props) => {
                     <p>#programming</p>
                    </div>
                    </div>
-                 <div className='text-blue-900 underline'>
-                 <a href="">mark as read</a>
+                 <div className='text-blue-900'>
+              <button onClick={()=>totalRead(read)} className='underline'>Mark as read</button>
                  </div>
                 </div>
             </div>

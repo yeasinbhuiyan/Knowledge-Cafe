@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './Components/Header/Header';
 import'./App.css'
 import AllUser from './Components/AllUser/AllUser';
 
 const App = () => {
+const [readTime,setReadTime] = useState(0)
+
+  const totalRead =(read)=>{
+
+  
+    const parseRead = parseInt(read)
+
+   let readAllTime = parseRead + readTime
+   setReadTime(readAllTime)
+
+
+}
   return (
     <div className='px-9'>
 
@@ -11,13 +23,19 @@ const App = () => {
 <div className='main-container my-5'>
   <div>
 
-<AllUser></AllUser>
+<AllUser totalRead={totalRead}></AllUser>
  
 
 
   </div>
   <div className='text-center'>
-<h1>Lorem, ipsum dolor.</h1>
+<div className='side-details'>
+
+<div className='border-blue-700 rounded'>
+<h1>Spent time on read : {readTime} min</h1>
+
+  </div>
+  </div>
   </div>
 
 </div>
