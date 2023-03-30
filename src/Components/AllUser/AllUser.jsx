@@ -4,7 +4,7 @@ import SingleUser from '../SingleUser/SingleUser';
 const AllUser = () => {
     const [users,SetUsers] = useState([])
     useEffect(()=>{
-        fetch('../../../public/fakeData/data.json')
+        fetch('../../../fakeData/data.json')
         .then(res => res.json())
         .then(data => SetUsers(data))
     },[])

@@ -8,7 +8,7 @@ const App = () => {
     <div className='px-9'>
 
 <Header></Header>
-<div className='main-container'>
+<div className='main-container my-5'>
   <div>
 
 <AllUser></AllUser>
