@@ -4,6 +4,7 @@ import SingleUser from '../SingleUser/SingleUser';
 const AllUser = (props) => {
     const [users,SetUsers] = useState([])
     const totalRead=props.totalRead
+    const handleDetails= props.handleDetails
     useEffect(()=>{
         fetch('../../../fakeData/data.json')
         .then(res => res.json())
@@ -12,7 +13,7 @@ const AllUser = (props) => {
     return (
         <div>
             {
-                users.map(user => <SingleUser totalRead={totalRead} user = {user}></SingleUser>)
+                users.map(user => <SingleUser key={user.id} handleDetails={handleDetails} totalRead={totalRead} user = {user}></SingleUser>)
             }
             
         </div>

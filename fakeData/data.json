@@ -5,10 +5,12 @@
       "author": "https://randomuser.me/api/portraits/men/88.jpg",
       "picture": "https://media.istockphoto.com/id/1401980646/photo/3d-rendered-classic-sculpture-metaverse-avatar-with-network-of-low-poly-glowing-purple-lines.jpg?b=1&s=170667a&w=0&k=20&c=nLf9fDcHVLZ9bPijP5QQrj0apVLdPXITVF6EAMqj1rg=",
       "age": 39,
+      "bookMark": 1,
       "eyeColor": "brown",
       "gender": "male",
       "email": "janicedorsey@asimiline.com",
       "title": "A Beginner's Guide to Pogramming",
+      "details": "A Beginner's Guide to Pogramming",
       "readDate": "Mar 16 (3 days Ago)",
       "read": 15
 
@@ -19,10 +21,12 @@
       "author": "https://randomuser.me/api/portraits/men/79.jpg",
       "picture": "https://media.istockphoto.com/id/1425828458/photo/young-man-uses-multiple-computers-while-coding-developing-web-site.jpg?b=1&s=170667a&w=0&k=20&c=QSouQfnpzmyfZ4EynL0TyjbHSCbI82Yqaqyc_Wmj3ZM=",
       "age": 20,
+      "bookMark": 1,
       "eyeColor": "green",
       "gender": "male",
       "email": "faulknerpetersen@asimiline.com",
       "title": "The Art of Pogramming: A Journey of Self-Discovery",
+      "details": "The Art of Pogramming: A Journey of Self-Discovery",
       "readDate": "Mar 11 (8 days Ago)",
       "read": "12"
     },
@@ -32,12 +36,15 @@
       "author": "https://randomuser.me/api/portraits/men/52.jpg",
       "picture": "https://media.istockphoto.com/id/1354205520/photo/portrait-of-motivated-black-it-programmer-working-on-laptop-computer-male-specialist-create.jpg?b=1&s=170667a&w=0&k=20&c=OGQ3GwEqDCm0tWZ3YbtWmK-nGzofGrI8Cq71SDiP-yc=",
       "age": 23,
+      "bookMark": 1,
       "eyeColor": "brown",
       "gender": "male",
       "email": "pearlietrevino@asimiline.com",
       "title": "React: The Essential Tool for React Development",
+      "details": "React: The Essential Tool for React Development",
       "readDate": "Mar 19 (1 days Ago)",
       "read": 10
+      
     },
     {
       "id": 4,
@@ -45,10 +52,12 @@
       "author": "https://randomuser.me/api/portraits/men/86.jpg",
       "picture": "https://media.istockphoto.com/id/1363276509/photo/teacher-giving-computer-science-lecture-to-diverse-multiethnic-group-of-female-and-male.jpg?b=1&s=170667a&w=0&k=20&c=MEf-p6PoemvTnsK5_qu940BMMu3vJf_ElurJQ5jqcuQ=",
       "age": 27,
+      "bookMark": 1,
       "eyeColor": "brown",
       "gender": "male",
       "email": "debbiemarquez@asimiline.com",
       "title": "The Benefits of React: Streamlining Your Workflow",
+      "details": "The Benefits of React: Streamlining Your Workflow",
       "readDate": "Mar 14 (5 days Ago)",
       "read": 11
       

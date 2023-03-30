@@ -9,6 +9,16 @@
   top: 0;
   
 }
+.total-read{
+  background-color: rgba(93, 44, 207, 0.339);
+  border-radius: 16px;
+  padding: 12px;
+  border: 1px solid rgba(50, 39, 169, 0.838);
+  
+}
+.card{
+gap: 25px;
+}
 @media screen and (max-width: 640px) {
   .main-container{
     display: grid;
