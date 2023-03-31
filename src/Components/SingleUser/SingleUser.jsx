@@ -7,15 +7,14 @@ const SingleUser = (props) => {
     const totalRead = props.totalRead
     const handleDetails =props.handleDetails
 
-
-
+ 
     return (
         <div>
             <div className="card w-full bg-base-100 shadow-xl mb-4">
                 <figure><img className='w-full h-96 rounded-xl' src={picture} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <div className='flex justify-between items-center'>
-                        <div className='flex items-center'>
+                    <div className='lg:flex justify-between items-center'>
+                        <div className='lg:flex items-center'>
                         <div className='w-20'>
                                 <img className='w-14 rounded-full' src={author} alt="" />
                             </div>
