@@ -22,7 +22,7 @@ const Question = () => {
                     It can work by:
                     <li>Routing</li>
                     <li>State Management</li>
-                    <li>Server-site rendering</li>
+                    <li></li>
                 </p>
             </div>
         </div>
