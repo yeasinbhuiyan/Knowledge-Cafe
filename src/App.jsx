@@ -53,7 +53,7 @@ const App = () => {
             </div>
 
             <div>
-              <h1>Bookmarked Blogs : {TotalBookmark}</h1>
+              <h1>Bookmarked : {TotalBookmark}</h1>
             </div>
 
             <div className='card mt-3'>
