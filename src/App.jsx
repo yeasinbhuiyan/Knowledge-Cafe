@@ -3,6 +3,8 @@ import Header from './Components/Header/Header';
 import './App.css'
 import AllUser from './Components/AllUser/AllUser';
 import DetailsCard from './Components/Details/DetailsCard';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const [readTime, setReadTime] = useState(0)
@@ -18,17 +20,29 @@ const App = () => {
 
   }
 
-  const [allDetails, setDetails] = useState("")
+  const [allDetails, setDetails] = useState([])
 
   const [TotalBookmark, setTotalBookmark] = useState(0)
 
+
+
   const handleDetails = (cardDetails, bookmark) => {
-    setDetails([...allDetails, cardDetails])
+    const alreadyAdded = allDetails && allDetails.find(detail => detail == cardDetails)
+    if(alreadyAdded){
+      toast('Already Exists')
+    }
+    else{
+     
+      setDetails([...allDetails, cardDetails])
+  
+  
+      const allBookMark = bookmark + TotalBookmark
+      setTotalBookmark(allBookMark)
+    }
 
-    console.log(bookmark)
 
-    const allBookMark = bookmark + TotalBookmark
-    setTotalBookmark(allBookMark)
+    
+ 
 
   }
   return (
@@ -53,7 +67,7 @@ const App = () => {
             </div>
 
             <div>
-              <h1>Bookmarked : {TotalBookmark}</h1>
+              <h1>Bookmarked Blogs : {TotalBookmark}</h1>
             </div>
 
             <div className='card mt-3'>
@@ -61,6 +75,7 @@ const App = () => {
                 allDetails && allDetails.map(detail => <DetailsCard detail={detail}></DetailsCard>)
               }
 
+<ToastContainer></ToastContainer>
 
             </div>
           </div>
