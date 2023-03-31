@@ -6,7 +6,7 @@ const AllUser = (props) => {
     const totalRead=props.totalRead
     const handleDetails= props.handleDetails
     useEffect(()=>{
-        fetch('../../../fakeData/data.json')
+        fetch('data.json')
         .then(res => res.json())
         .then(data => SetUsers(data))
     },[])
